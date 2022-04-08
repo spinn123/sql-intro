@@ -40,3 +40,7 @@
 -- +-------------------------------+------------------+
 
 
+select name, avg(wins)
+from teams
+where year > "2000"
+group by name
